@@ -2,8 +2,8 @@ import time
 
 #get current time components
 hour = int(time.strftime('%H'))
-min = int(time.strftime('%M'))
-sec = int(time.strftime('%s'))
+minute = int(time.strftime('%M'))
+second = int(time.strftime('%S'))
 
 print("current time:", time.strftime('%H:%M:%S'))
 if (hour > 5) or (hour == 5 and min >= 0):
