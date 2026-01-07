@@ -9,13 +9,12 @@ ans = input("answer a,b,c,d ?? = ").lower()
 # print() only displays and returns None
 # ans = print(input()) stores None, not the input
 # Always store input() directly
-
-
 if ans == "a":
     print("right")
     t_m +=1000
 else :
     print("wrong")
+    
     
 q2 = print("\nQ2. What is the colour of the sky?")
 print ("options are \nA- pink , \nB- blue")
