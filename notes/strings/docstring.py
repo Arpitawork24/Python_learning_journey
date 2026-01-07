@@ -1,3 +1,4 @@
+#docstring appear right after the definition of a function
 def square(n):
     '''Takes in a number n, returns the square of n'''
     print(n**2)
