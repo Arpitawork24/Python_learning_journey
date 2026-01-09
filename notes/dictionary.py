@@ -14,6 +14,13 @@ print(roll[2]) #accessing value roll no 2 as 2 is key
 # print(roll["Piyu"]) #this will give error bcz piyu is key nd in dict only values can be accessed using key
 print(roll.get(1)) #can also be accessed using get method
 
+#print(roll.update({3: "Rahul"})) # this will give o/p as none as update do updates but returns none only
+(roll.update({3: "Rahul" , 1: "Sanu"})) #updating 2 values
+print(roll) #updated
+
+
+#eg-2
+
 Result = {
     "Arpita" : 80,
     "Rohan" : 54,
@@ -21,6 +28,6 @@ Result = {
     
 }
 
-print(Result) #accessing all result
+print("Result",Result) #accessing all result
 print(Result["Rohan"]) #accessing rohan's result as rohan is key
 print(Result.get("Arpita"))
