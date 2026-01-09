@@ -4,7 +4,8 @@ roll = {
     1 : "Arpita",
     2: "Piyu",
     3: "Raj",
-    4 : "cutiee"
+    4 : "cutiee",
+    5 : "sweetu"
 }
 
 print(roll) #printing all key with their values
@@ -23,6 +24,9 @@ roll.pop(3)
 print(roll) #popped key-value pair whose key is mentioned i.e. 3
 roll.popitem()
 print(roll) #pops laust key-value pair
+del roll[2] #del keyword can be used like the pop()
+print(roll)
+
 roll.clear()
 print(roll) #dict cleared
 
