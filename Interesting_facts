@@ -1,1 +1,2 @@
 In python, we know that we can use 'else' with 'if' loop; but => we can also use 'else' with 'for' nd 'while' loops too.
+In Python, the 'is' operator checks if two variables point to the same object in memory. 
