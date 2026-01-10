@@ -1,5 +1,6 @@
 #theory -
 # The else block appears after the body of the loop.
+# IMP - The else block just after for/while is executed only when the loop is NOT terminated by a break statement.
 for i in range(6):
     print(i)
 else:
