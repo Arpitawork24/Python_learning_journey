@@ -1,6 +1,6 @@
 # Implement a countdown that starts from a user-given number and decreases to 1, displaying the remaining time at each step.
 
-#imp - range(start, stop, step)
+#imp - range(start, stop, step or difference)
 
 n = int(input("enter countdown seconds : ",))
 for i in range (n,0,-1):
