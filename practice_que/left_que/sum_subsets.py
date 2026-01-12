@@ -1,0 +1,2 @@
+# Given a array arr of integers, return the sums of all subsets in the list. Return the sums in any order.
+# this is a medium level dsa que under recursion nd backtracking
