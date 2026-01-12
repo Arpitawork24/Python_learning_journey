@@ -9,7 +9,6 @@ class Solution:
             seq.append(n)
         return seq
 
-
 # only for VS Code testing
-n = int(input())
+n = int(input("n= "))
 print(Solution().jugglerSequence(n))
