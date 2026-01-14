@@ -1,4 +1,5 @@
 # * = Collect all remaining elements into a list.
+# a better alternative of manual slicing
 tup = (1,2,3,4,5)
 a,*b,c = tup
 print (a) #1st element
