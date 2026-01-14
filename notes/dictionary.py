@@ -12,7 +12,7 @@ print(roll) #printing all key with their values
 print("only values-",roll.values()) #this will print all values only without key
 print("only keys-",roll.keys()) #this will print all keys only without values
 print("all key-values-\n",roll.items()) #this will print all keys nd values pairs
-print(roll[2]) #accessing value roll no 2 as 2 is key
+print(roll[2]) #accessing value of (key) roll no 2 as 2 is key
 # print(roll["Piyu"]) #this will give error bcz piyu is key nd in dict only values can be accessed using key
 print(roll.get(1)) #can also be accessed using get method
 
@@ -20,10 +20,10 @@ print(roll.get(1)) #can also be accessed using get method
 (roll.update({3: "Rahul" , 1: "Sanu"})) #updating 2 values
 print(roll) #updated
 
-roll.pop(3)
-print(roll) #popped key-value pair whose key is mentioned i.e. 3
+roll.pop(3) #popped key-value pair whose key is mentioned i.e. 3
+print(roll)
 roll.popitem()
-print(roll) #pops laust key-value pair
+print(roll) #pops last key-value pair
 del roll[2] #del keyword can be used like the pop()
 print(roll)
 
