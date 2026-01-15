@@ -3,3 +3,4 @@ In Python, the 'is' operator checks if two variables point to the same object in
 If a Python function has no return statement, it automatically returns None (not a error).
 In Python, functions can return other functions, and the returned function retains access to the outer function’s variables through closures.
 *args lets a function accept any number of positional arguments as a tuple.
+Python strings are immutable.
