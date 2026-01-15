@@ -45,3 +45,5 @@ print(result.get("Arpita"))
 # Adding a new key-value pair
 result["shri"] = 100
 print(result)
+
+print("Arpita" in result)  #in is used to check the key exist in the dictionary or not.
