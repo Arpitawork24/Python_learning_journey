@@ -8,7 +8,7 @@ class Solution:
                 freq[arr[i]]+=1
             else:
                 freq[arr[i]] = 1
-        if freq[arr[i]]>n//2:
+        if freq[arr[i]] > n//2:
             return arr[i]
         return -1
 
