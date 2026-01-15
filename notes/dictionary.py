@@ -42,3 +42,6 @@ result = {
 print("Result-\n",result) #accessing all result
 print(result["Rohan"]) #accessing rohan's result as rohan is key
 print(result.get("Arpita"))
+# Adding a new key-value pair
+result["shri"] = 100
+print(result)
