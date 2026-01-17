@@ -27,15 +27,13 @@ def code():
     elif len(word)<3:
         word = word[::-1]
         print(word)
-    elif len(word)>3 :
+    else :
         temp = word[1:] + word[0]
         front_random = ''.join(random.choices(string.ascii_lowercase, k=3))
         back_random = ''.join(random.choices(string.ascii_lowercase, k=3))
         result = front_random + temp + back_random
         print(result)
-    else:
-        print("invalid")
-        
+    
 
 def decode():
     word = input("enter the word= ")
