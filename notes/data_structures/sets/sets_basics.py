@@ -20,6 +20,7 @@ info1 = {"Carla", 19, False, 5.9}
 for item in info1:
     print(item)
 
+# pop() method removes nd returns an arbitary (random) element from the set ; in list it always removes the last elemnent
 val = info1.pop()
 print(val)
 print(info1)
