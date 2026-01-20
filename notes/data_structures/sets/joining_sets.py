@@ -5,6 +5,9 @@
 A = {1, 2, 3}
 B = {3, 4, 5}
 
+# Checking the element# using in keyword prints true if present else false
+print(1 in A)
+
 C = A.union(B) #unionn of a nd b ; a or b isnt changed
 print("union",C) #new set k/a c is created
 print(A) #here a isnt changed
