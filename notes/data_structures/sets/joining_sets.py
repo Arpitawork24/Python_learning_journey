@@ -5,6 +5,10 @@
 A = {1, 2, 3}
 B = {3, 4, 5}
 
+# Accessing element using For loop
+for i in A:
+    print(i)
+
 # Checking the element# using in keyword prints true if present else false
 print(1 in A)
 
