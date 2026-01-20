@@ -4,6 +4,7 @@ print(info)
 for item in info:
     print (item)
 
+# remove() method removes a specified element from the set
 #TypeError: set.remove() takes exactly one argument , if the element not found then remove() will raise error
 info.remove("Carla")
 print(info)
