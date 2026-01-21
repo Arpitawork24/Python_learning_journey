@@ -3,8 +3,9 @@ import random as rd
 print("1= rock, 2=paper, 3= scissor")
 while True :
     a = int(input("enter the no.= "))
+    print("ur input is = ",a)
     b = rd.randint(1,3)
-    print(b)
+    print("computers choice is= ",b)
     
     if a == b :
         print("draw")
