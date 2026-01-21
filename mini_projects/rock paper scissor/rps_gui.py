@@ -1,3 +1,5 @@
+# gui is done with the help of chatgpt
+
 import tkinter as tk
 import random
 
