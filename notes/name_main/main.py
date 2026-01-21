@@ -1,0 +1,2 @@
+import arpita
+arpita.welcome()
