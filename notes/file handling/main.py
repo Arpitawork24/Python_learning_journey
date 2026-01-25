@@ -25,3 +25,14 @@ f = open("notes/file handling/myfile.txt", "rb") # binary mode
 text = f.read()  #to read the file no arg given
 print(text)
 f.close()
+
+
+#read line-
+print("read line-")
+f = open("notes/file handling/myfile.txt", "r")
+
+while True:
+    word = f.readline()
+    if not word :
+        break
+    print(word)
