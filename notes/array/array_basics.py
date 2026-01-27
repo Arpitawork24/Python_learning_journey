@@ -24,3 +24,22 @@ print(a)
 #removing element at index 3
 a.pop(3)
 print(a)
+
+# index of 1st occurrence of 6
+print(a.index(6))
+
+# update item at index 2
+a[2] = 6
+print(a)
+
+# count() method to count given item in array.
+count = a.count(6)
+print(count)
+
+# reverse
+a.reverse()
+print(*a)
+
+#  The extend() function is simply used to attach an item from iterable to the end of the array
+a.extend([6,7,8,9,2])
+print(a)
