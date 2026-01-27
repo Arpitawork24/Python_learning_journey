@@ -15,3 +15,17 @@ print(b)
 
 c = [(x,y) for x in range(2) for y in range(3)]
 print(c)
+
+# Flattening a list of lists
+mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+res3 = [val for row in mat for val in row]
+print(res3)
+
+#same logic without list comprehension
+# res3 = []
+
+# for row in mat:
+#     for val in row:
+#         res3.append(val)
+
+# print(res3)
