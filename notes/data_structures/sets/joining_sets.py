@@ -39,7 +39,7 @@ print("symm",C)
 A.symmetric_difference_update(B)
 print(A)
 
-#The difference() and difference_update() methods prints only items that are only present in the original set and not in both the sets.
+#The difference() and difference_update() methods prints only items that are only present in the original set and not in both the sets. or "-" operator is used
 A = {1, 2, 3}
 B = {3, 4, 5}
 

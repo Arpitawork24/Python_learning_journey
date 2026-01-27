@@ -5,4 +5,5 @@ In Python, functions can return other functions, and the returned function retai
 *args lets a function accept any number of positional arguments as a tuple.
 Python strings are immutable.
 tuples are immutable
+In sets, duplicate values aren't allowed.
 
