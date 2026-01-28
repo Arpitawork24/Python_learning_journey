@@ -13,9 +13,9 @@ print(a)
 for i in range(3):
     print(a[i], end=" ")
 
-#adding elements to array
+#at a particular index adding elements to array
 a.insert(7,8)
-print(a)
+print("insert",a)
 
 # removing first occurence of element (not index)
 a.remove(3)
