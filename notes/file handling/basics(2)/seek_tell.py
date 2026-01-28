@@ -5,3 +5,4 @@ with open('sample.txt', 'w') as f:
 with open('sample.txt', 'r') as f:
     f.seek(2)  # this means that cursor is at index 2
     print(f.read())
+    print(f.tell())  # tells the position of the cursor i.e. at 7 rn (bcz of truncate)
