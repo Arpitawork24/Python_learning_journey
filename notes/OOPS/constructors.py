@@ -1,5 +1,6 @@
 class Person():
     def __init__(self, n, o):
+        # instance variables
         self.name = n
         self.occ = o
     def info(self):
