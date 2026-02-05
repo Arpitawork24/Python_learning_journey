@@ -5,8 +5,8 @@ class Library:
         
     def show_books(self):
         print("Showing books:")
-        for book in self.books:
-            print(book)
+        for i in self.books:
+            print(i)
 
     def add_book(self, book_name):
         print("Adding book")
