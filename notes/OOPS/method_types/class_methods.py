@@ -15,10 +15,14 @@ class Employee():
 s = Employee()
 s.name = "rohit"
 s.show()
-s.changecomp("google")
+s.changecomp("google")   # creates/changes instance variable (because method is not classmethod)
 s.show()
 print(Employee.company)
 
-s.changecomp2("aws")
-s.show()
+s.changecomp2("aws")  # changes class variable
+s.show()  # still shows google because instance variable overrides class variable when accessed via boject
 print(Employee.company)
+del s.company  #instance var deleted
+s.show()  # now it shows class variable (aws) because instance variable is deleted
+
+
