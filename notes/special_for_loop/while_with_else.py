@@ -6,7 +6,7 @@ while i < 7:
     i=i+1
 
 else :
-    print("while loop is over \n") #after for loop is completed this will run.
+    print("while loop is over \n") #after while loop is completed this will run.
 
 #useless else with while loop
 i = 0
@@ -24,7 +24,6 @@ print("last example \n")
 
 i = 0
 while i < 7:
-    
     i=i+1
     if i==9:
         break
