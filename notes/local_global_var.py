@@ -19,3 +19,13 @@ def hiii():
     x = 2
 hiii()
 print(x)
+
+# If you want to modify global variable inside function, you must use global keyword
+a = 10
+
+def change():
+    global a  # to change global a
+    a = 20
+
+change()
+print(a)
