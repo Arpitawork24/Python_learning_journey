@@ -8,3 +8,11 @@ elif marks >= 50:
     print("C")
 else:
     print("Fail")
+
+# Important operators
+# ==   equal
+# !=   not equal
+# >    greater than
+# <    less than
+# >=   greater than equal
+# <=   less than equal
