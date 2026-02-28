@@ -18,5 +18,5 @@ print(c) #remaining elements
 print("new")
 *a, b, c = tup
 print(*a) #all except last 2
-print(b) #2nd element
+print(b) #2nd last element
 print(c) #last elements
