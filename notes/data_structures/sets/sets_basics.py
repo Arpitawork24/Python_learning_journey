@@ -17,10 +17,17 @@ print("info 1- ")
 #they cannot be accessed using index numbers.
 #accessing using for loop
 info1 = {"Carla", 19, False, 5.9}
+
+a,b,c,d = info1
+print(a)
+print(b)
+print(c)
+print(d)
+
 for item in info1:
     print(item)
 
-# pop() method removes nd returns an arbitary (random) element from the set ; in list it always removes the last elemnent
+# pop() method removes nd returns an arbitary (random) element from the set ; although in list it always removes the last elemnent
 val = info1.pop()
 print(val)
 print(info1)
