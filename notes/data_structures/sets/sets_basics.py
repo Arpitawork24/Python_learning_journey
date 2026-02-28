@@ -1,13 +1,13 @@
 # Sets are unordered collection of data items nd do not contain duplicate items.
 info = {"Carla", 19, False, 5.9, 19} #here 19 will print only once
-print(info)
-for item in info:
+print(info) # in 1 line with tuple format
+for item in info:  # each word in new line
     print (item)
 
 # remove() method removes a specified element from the set
 #TypeError: set.remove() takes exactly one argument , if the element not found then remove() will raise error
 info.remove("Carla")
-print(info)
+print("remove-",info)
 
 #discard() method also removes a specified element from the set. Unlike remove(), if the element is not found, it does not raise an error.
 info.discard(5.9)
