@@ -1,13 +1,13 @@
-f = open("notes/file handling/myfile.txt", "r")
+f = open("file_handling/basics/myfile.txt", "r")
 # print(f)
 text = f.read()  #to read the file no arg given
 print(text)
 f.close() # necessary to save the file properly nd free system resources
 
 
-f = open("notes/file handling/myfile2.txt", "a")  # a is for append => include the text at the ending of existing text nd   w is for write => clear full text nd then write  (creates new file if file doesnt exist) 
+f = open("file_handling/basics/myfile2.txt", "a")  # a is for append => include the text at the ending of existing text nd   w is for write => clear full text nd then write  (creates new file if file doesnt exist) 
 
-text = f.write("\nwelcome")  # to write or append 1 arg is given in write()
+text = f.write("\nwelcome") #will return the number of characters written.   # to write or append 1 arg is given in write()
 print(text)
 f.close()
 
@@ -20,7 +20,7 @@ f.close()
 
 # r = rt nd w = wt as t is the deafualt mode ; t mode is used tp handle text files thats default
 # b=> binary mode ; used to handle binary files
-f = open("notes/file handling/myfile.txt", "rb") # binary mode
+f = open("file_handling/basics/myfile.txt", "rb") # binary mode
 # print(f)
 text = f.read()  #to read the file no arg given
 print(text)
@@ -29,7 +29,7 @@ f.close()
 
 #read line-
 print("read line-")
-f = open("notes/file handling/myfile.txt", "r")
+f = open("file_handling/basics/myfile.txt", "r")
 
 while True:
     word = f.readline()
