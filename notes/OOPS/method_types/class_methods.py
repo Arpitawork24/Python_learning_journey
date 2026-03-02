@@ -6,7 +6,7 @@ class Employee():
         print(f"the name is {self.name} nd company is {self.company}")
     
     def changecomp(cls,newcomp):
-        cls.company = newcomp
+        cls.company = newcomp 
         
     @classmethod   # this decorator is used to define class method
     def changecomp2(cls2,newcomp2):
