@@ -1,2 +1,2 @@
 / always returns a float.
-// always returns ainteger.
+// always returns a integer.
