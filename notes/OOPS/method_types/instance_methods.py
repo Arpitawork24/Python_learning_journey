@@ -7,3 +7,4 @@ class Student:
 
 s = Student("Arpita")
 s.greet()
+print(s.name)
