@@ -1,7 +1,7 @@
 # these are bound to class nd not the instance of the class.
 # used to change something that belongs to class (not a object)
 class Employee():
-    company = "apple"  #class variable
+    company = "apple"  #class variable #stored in Employee.comapny
     def show(self):
         print(f"the name is {self.name} nd company is {self.company}")
     
@@ -15,11 +15,13 @@ class Employee():
 s = Employee()
 s.name = "rohit"
 s.show()
-s.changecomp("google")   # creates/changes instance variable (because method is not classmethod)
+s.changecomp("google")   # creates/changes instance variable (because method is not classmethod)  
+# Employee.company = "apple" nd s.company = "google"
 s.show()
 print(Employee.company)
 
 s.changecomp2("aws")  # changes class variable
+# now - Employee.company = "aws" nd s.company = "google"
 s.show()  # still shows google because instance variable overrides class variable when accessed via boject
 print(Employee.company)
 del s.company  #instance var deleted
