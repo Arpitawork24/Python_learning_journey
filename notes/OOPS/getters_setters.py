@@ -9,12 +9,17 @@ class Student:
     @marks.setter   #@marks.setter is a decorator -> This method is the setter for the property called marks
     def marks(self, value):  # setter
         if value <= 0:
-            print("Invalid marks")
-        else:
-            self._marks = value
+            raise ValueError("error")
+        self._marks = value
+        # else:
+        #     self._marks = value
 s = Student(80)
 print(s.marks)     # getter
 s.marks = 90       # setter
 print(s.marks)  
-s.marks = 0     
-print(s.marks)  
+try:
+    s.marks = 0
+except ValueError as e:
+    print("Caught:", e)
+
+# print(s.marks)
