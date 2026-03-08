@@ -2,49 +2,39 @@ import requests
 from config import api_key
 from topics import topics
 
+# Show available news categories to the user
 for key, value in topics.items():
     print(f"{key}. {value}")
 
-user_choice = int(input("enter no : "))
+# Take user input for category selection
+user_choice = int(input("Enter number: "))
 
+# Validate user choice
 if user_choice in topics:
     category = topics[user_choice]
 else:
     print("Invalid choice")
     exit()
 
+# Parameters sent to NewsAPI
 params = {
-    "apiKey" : api_key,
-    "country" : "us",
-    "category" : topics[user_choice]
+    "apiKey": api_key,
+    "country": "us",
+    "category": category
 }
 
+# Send request to NewsAPI
 response = requests.get("https://newsapi.org/v2/top-headlines", params=params)
+print("Status Code:", response.status_code)
 
-print(response.status_code)
-
+# Convert API response (JSON) into Python dictionary
 data = response.json()
-# print(data["articles"]) # it will print all articles
-articles = data["articles"] 
-''' 
-it will make articles look like these - 
-[
- {article1},
- {article2},
- {article3}
-]
-'''
 
-# print(articles[0])   it will print the full 1st article
-# print(articles[0]["title"]) # it will print the title of 1st article
+# Extract list of articles
+articles = data["articles"]
 
-
-# Now it will print all news headlines.
-# for article in articles:
-    # print(article["title"])
-    
-# print("new")
+# Display top 5 news articles
 for article in articles[:5]:
-    print("title :", article["title"])
-    print("description :", article.get("description"))
-    print("url :", article["url"])
+    print("\nTitle:", article["title"])
+    print("Description:", article.get("description"))
+    print("URL:", article["url"])
