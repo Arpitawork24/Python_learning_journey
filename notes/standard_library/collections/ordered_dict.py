@@ -1,3 +1,5 @@
+# OrderedDict is a subclass of Pythons built-in dictionary dict that remembers the order in which keys are inserted.
+
 from collections import OrderedDict
 
 od1 = OrderedDict([("a",1),("b",2)])
